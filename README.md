@@ -1,2 +1,32 @@
-# paper-reading-for-literature-review
-A Codex skill for reading academic papers and preparing literature review notes. Offers guided reading, explanations of theories and methods, evidence verification, comprehension checks, and structured notes to help you understand key findings, assess limitations, and connect each paper to your review.
+# 单篇文献带读与综述笔记
+
+面向 literature review 的 Codex skill：逐步理解单篇论文，核对结论与证据，形成可积累的综述阅读卡片。
+
+## 功能
+
+- 默认逐步带读：文章地图 → 方法与结果 → 理解检查 → 综述记录。
+- 支持一次性快速整理与复习。
+- 结合原文解释理论、概念和研究方法。
+- 为核心发现记录原文位置，区分研究结果、作者解释和阅读者推断。
+- 适配定量、质性、综述及理论文章。
+- 在提供其他论文或笔记后进行跨文献比较。
+
+## 安装
+
+下载本仓库，将含有 `SKILL.md` 和 `agents/` 的目录命名为 `paper-reading-for-review`，放入 `${CODEX_HOME:-$HOME/.codex}/skills/`。
+
+## 使用
+
+提供论文全文或可访问的来源，然后输入：
+
+> 使用 $paper-reading-for-review 带我阅读这篇文献。我的综述主题是 XXX，请逐步解释方法与发现，并整理阅读卡片。
+
+快速整理：
+
+> 使用 $paper-reading-for-review 快速整理这篇文献，输出关键证据和综述阅读卡片。
+
+## 输出
+
+一句话概括、结构化阅读卡片、具体综述用途，以及待核对或待追踪的问题。
+
+全文未报告的信息不会自行补齐；只有摘要时仅进行摘要级分析。关键结论应回到原文核对。

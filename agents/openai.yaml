@@ -1,0 +1,4 @@
+interface:
+  display_name: "单篇文献带读与综述笔记"
+  short_description: "逐步理解单篇文献，核对关键证据，形成可用于文献综述的阅读卡片"
+  default_prompt: "使用 $paper-reading-for-review 带我阅读这篇文献，为我的 literature review 做准备，逐步解释方法与发现并整理阅读卡片。"
